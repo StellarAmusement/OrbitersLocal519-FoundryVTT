@@ -1,9 +1,8 @@
 # Into the Odd for Foundry VTT
 
-This project enables you to play [this game](https://www.drivethrurpg.com/product/145536/Into-the-Odd) on [this virtual tabletop software](https://foundryvtt.com/).
+This project enables you to play [this game](https://archons-court-games.itch.io/orbiters-local-519) on [this virtual tabletop software](https://foundryvtt.com/).
 
 ![](screenshot.png)
-Map in the background made by [Dyson Logos](https://dysonlogos.blog/).
 
 ## Installation
 

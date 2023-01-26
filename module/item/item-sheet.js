@@ -7,7 +7,7 @@ export class IntoTheOddItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["intotheodd", "sheet", "item"],
+      classes: ["orbiterslocal519", "sheet", "item"],
       width: 420,
       height: 320
     });
@@ -15,7 +15,7 @@ export class IntoTheOddItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/intotheodd/templates/item";
+    const path = "systems/orbiterslocal519/templates/item";
     // Return a single sheet for all item types.
     return `${path}/item-sheet.html`;
     // Alternatively, you could use the following return statement to do a

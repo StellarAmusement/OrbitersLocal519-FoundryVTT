@@ -5,7 +5,7 @@ import { IntoTheOddItem } from "./item/item.js";
 import { IntoTheOddItemSheet } from "./item/item-sheet.js";
 
 Hooks.once('ready', async function() {
-  if (game.user.isGM && game.settings.get('intotheodd', 'showInitiativeHelp') === true) {
+  if (game.user.isGM && game.settings.get('orbiterslocal519', 'showInitiativeHelp') === true) {
     alert(
       'To the GM from the game-system developer:\n\n' +
 
@@ -15,13 +15,13 @@ Hooks.once('ready', async function() {
 
       'This message will only appear once (but can be reset in system settings).'
     )
-    game.settings.set('intotheodd', 'showInitiativeHelp', false)
+    game.settings.set('orbiterslocal519', 'showInitiativeHelp', false)
   }
 });
 
 Hooks.once('init', async function() {
 
-  game.intotheodd = {
+  game.orbiterslocal519 = {
     IntoTheOddActor,
     IntoTheOddItem
   };
@@ -31,7 +31,7 @@ Hooks.once('init', async function() {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "@dex - 1d20",
+    formula: "@agl - 1d20",
     decimals: 1
   };
 
@@ -41,11 +41,11 @@ Hooks.once('init', async function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("intotheodd", IntoTheOddActorSheet, { makeDefault: true });
+  Actors.registerSheet("orbiterslocal519", IntoTheOddActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("intotheodd", IntoTheOddItemSheet, { makeDefault: true });
+  Items.registerSheet("orbiterslocal519", IntoTheOddItemSheet, { makeDefault: true });
 
-  game.settings.register('intotheodd', 'showInitiativeHelp', {
+  game.settings.register('orbiterslocal519', 'showInitiativeHelp', {
     name: 'Show initiative helptext on next startup',
     hint: 'This option only exists so the helptext won\'t appear on every startup.\n' +
     'When the message appears, this option will uncheck itself.',
@@ -79,4 +79,3 @@ Hooks.once('init', async function() {
   });
 
 });
-

@@ -13,11 +13,11 @@
           "value": 10,
           "max": 10
         },
-        "dex": {
+        "agl": {
           "value": 10,
           "max": 10
         },
-        "wil": {
+        "per": {
           "value": 10,
           "max": 10
         }

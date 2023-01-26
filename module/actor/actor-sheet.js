@@ -7,8 +7,8 @@ export class IntoTheOddActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["intotheodd", "sheet", "actor"],
-      template: "systems/intotheodd/templates/actor/actor-sheet.html",
+      classes: ["orbiterslocal519", "sheet", "actor"],
+      template: "systems/orbiterslocal519/templates/actor/actor-sheet.html",
       width: 500,
       height: 500,
       tabs: [
